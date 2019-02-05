@@ -1,0 +1,88 @@
+.database-search{
+	background: var(--dark);
+	color: var(--bright);}
+	.info-header{
+		text-align: center;
+		color: var(--bright);}
+	.form-holder{
+		width: 100%;}
+		.form-holder form{
+			margin: 0 10%;
+			display: flex;
+			flex-direction: column;}
+			.form-holder input:not([type='checkbox']), select{
+				width: 300px;}
+				#submitBox{
+				width: 15em;}
+		.query-data{
+			margin: 0;
+			display: flex;
+			flex-direction: row;}
+			.book-info, .user-info{
+				display: flex;
+				margin: 0 auto;
+				flex-direction: column;}
+			.query-data textarea{
+				min-width: 30%;
+				min-height: 3em;
+				width: 300px;
+				height: 6em;}
+		.form-holder input,select,textarea {
+			margin-bottom: 0.5rem;}
+		.form-holder .req:after{
+			color:red;
+			content: "*";}
+		.submission-box{
+			display: flex;
+			flex-direction: column;
+			align-items: center;}
+		.g-recaptcha{
+			margin: 2em;}
+			.label-line{
+				text-align: right;
+				display:inline-block;}
+			.label-line span{
+				float: left;}
+		.submit{
+			font-size: 180%;
+			background: var(--bright);
+			cursor: pointer;
+			transition: background 0.5s}
+		/*@media (hover: hover) {
+			.submit:hover{
+				background: #FA0;} }*/
+
+@media (max-width: 1080px) and (min-resolution: 97dpi) {
+	.query-data{
+		flex-direction: column;
+	}
+	.book-info, .user-info, .submission-box{
+		margin: 0 !important;
+		align-items: unset;}
+		.submission-box textarea{
+			width: 100%;
+			height: 12em;}
+	.g-recaptcha{
+		transform:scale(2.4);
+		align-self: center;
+		position: relative;
+		margin: 1.7em 0 2.0em 0 !important;}
+}
+
+@media (max-resolution: 96dpi){
+	@media (max-width: 1440px){
+		.form-holder form{
+			margin: 0;
+		}
+	}
+	@media (max-width: 1024px){
+		.query-data{
+			flex-direction: column;
+		}
+	}
+	@media (max-width: 1180px){
+		.form-holder form{
+			margin: 0;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+.book-info{
+	background: var(--dark);
+	color: var(--bright);}
+	.sub-content-block{
+		border: 1px solid var(--bright);
+		background: var(--dark2);
+		padding: 1.5em;
+		border-radius: var(--br);;
+		margin-bottom: 1em;}
+	.s-c-b-header{
+		margin-left: 1em;
+		border: 1px solid var(--bright);
+		position: relative;
+		top: 0.5em;
+		background: var(--dark);
+		padding: 0 0.7em;}
+	.book-details{
+		display: flex;
+		flex-direction: row;}
+		.book-text{
+			width: 100%;
+		}
+		.book-image img{
+			border: 1px solid var(--bright);
+			width: 15em;
+		}
+	.email-link{
+		border-radius: var(--small-br);
+		color: var(--bright);}
+	.book-comments{
+		font-size: 1.1em;
+		padding: 1.5em;}

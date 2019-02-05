@@ -1,0 +1,10 @@
+.search-bar{
+	background-color: var(--dark);}
+	.form-holder{
+		width: 100%;}
+		.search-bar form{
+			margin: 0 10%;
+			display: flex;
+			flex-direction: column;}
+		.search-bar #submitBox{
+			width: 15em;}

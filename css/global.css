@@ -1,0 +1,103 @@
+:root{
+	--bgcolor: #46C3D8;
+	--dark: #334;
+	--dark2: #446;
+	--bright: #FFD;
+	--br: 1em;
+	--small-br: 0.2em;
+}
+/* Main page */
+body{
+	margin: 0;
+}
+.body-container{
+	background: var(--bgcolor);
+	min-height: 100vh;
+	padding-bottom: 3em;
+	margin: 0;}
+	.nav-list li{
+		font-size: 130%;
+		transition: background 0.5s}
+	.nav-list li a{
+		transition: color 0.5s}
+	.body-header{
+		background-color: rgba(50,50,50);}
+		.nav-list{
+			justify-content: center;
+			display: flex;
+			flex-direction: row;
+			border-bottom: 2px solid black;
+			padding: 0;
+			margin: 0;}
+			.nav-list li{
+				margin: 0.2em 0.5em;
+				list-style-type: none;}
+			.nav-list li a{
+				border-radius: var(--small-br);
+				background-color: red;
+				color: white;
+				margin: 0 auto;
+				border: 2px solid black;
+				padding: 5px 10px;
+				display: block;
+				text-align: center;
+				min-width: 8em;
+				text-decoration: none;}
+				.nav-list li a:hover{
+					background-color: white;
+					color: red;}
+	.main-content{
+		/*flex: 1 1 auto;*/
+		margin: 3em auto 0 auto;;
+		width: 70vw;}
+		.content-block{
+			display: flex;
+			flex-direction:column;
+			box-sizing: border-box;
+			padding: 2em 2%;
+			border-radius: var(--br);
+			border: 2px solid black;}
+		.content-block-compact{
+			padding: 2em 8%;}
+.body-footer{
+	background: rgb(40,40,40);
+	height: 0;}
+
+
+/*@media (max-width: 1080px) and (min-resolution: 97dpi), (max-resolution: 96dpi) and (max-width:700px){
+	.nav-list{
+		flex-direction: column !important;
+		padding: 1em 0;}
+	.nav-list li a{
+		width: 60%;}
+}*/
+
+
+/*@media (max-width: 1080px) and (min-resolution: 97dpi) {
+	.nav-list li a{
+		font-size: 3rem;}
+	.content-block{
+		padding: 1em 0 !important;
+		font-size: 3rem;}
+	.form-holder input,select {font-size: 3rem;}
+	.form-holder input[type=checkbox] {width: 2rem; height: 2rem;}
+	.form-holder input:not([type=checkbox]), select{
+		width: 100% !important;
+	}
+}*/
+
+/*@media (max-resolution: 96dpi){
+	@media (max-width: 1366px){
+	.main-content{
+		width: 85vw;}
+	}
+	@media (max-width: 570px){
+		.nav-list li a{
+		width: 300px !important;}
+	}
+	@media (max-width: 380px){
+		.nav-list li a{
+		width: 200px !important;}
+	}
+
+}*/
